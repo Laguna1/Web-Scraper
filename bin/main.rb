@@ -1,3 +1,4 @@
+require_relative '../lib/scraper'
 require 'byebug'
 require 'nokogiri'
 require 'paint'
@@ -6,7 +7,7 @@ require 'httparty'
 require 'rspec'
 require 'open-uri'
 
-def scraper
+# def scraper
  
-end
+# end
 
