@@ -1,5 +1,5 @@
-# rubocop: disable Metrics/MethodLength
 # rubocop: disable Lint/UselessAssignment
+
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
@@ -22,17 +22,17 @@ class Scraper
     places = doc.css('.vip')
 
      places.each do |place|
-     place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(',')
+     place_name = place.css('div.title-wrapper a').text.gsub(/\t/,' ').split(',')
      address = place.css('div.title-meta').text.split(',')
      desc = place.css('div.description p').text.split(',')
 
-    output = {
-      :place_name => place_name,
-      :address => address,
-      :desc => desc
-    }
-    results << output.each_value { |value| result = "#{value}" }
-   end
+      output = {
+        :place_name => place_name,
+        :address => address,
+        :desc => desc
+      }
+         results << output.each_value { |value| result = "#{value}" }
+     end
     sleep 0.1
     export_to_csv(results)
   end
@@ -45,7 +45,7 @@ class Scraper
        results.each do |result|
          csv << [result[:place_name], result[:address]]
        end
-     end
+    end
     results
   end
 end

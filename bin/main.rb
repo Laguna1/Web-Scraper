@@ -1,3 +1,4 @@
+# rubocop: disable Lint/InconsistentIndentation
 require_relative '../lib/scraper5'
 
 class Start < Scraper
@@ -19,7 +20,7 @@ class Start < Scraper
 
   def user_answer
     loop do
-      answer = gets.chomp.downcase
+       answer = gets.chomp.downcase
         if answer == 'y'
           puts '************************************************************************************************'
           puts '                                         "Let\'s start!"                                        '
@@ -32,13 +33,13 @@ class Start < Scraper
         else
           puts 'It seems you work too hard, take care of yourself'
         end
-        end
-          pp scrape_showplaces
-          puts
-          puts
-          puts
-          puts '**************************************"Good luck!"**********************************************'
     end
+      pp scrape_showplaces
+      puts
+      puts
+      puts
+      puts '**************************************"Good luck!"**********************************************'
+  end
 end
 
 scraper = Start.new
@@ -46,3 +47,5 @@ scraper.welcome
 scraper.user_answer
 scraper.scrape_showplaces
 scraper.export_to_csv
+
+# rubocop: enable Lint/InconsistentIndentation
