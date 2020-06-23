@@ -19,10 +19,10 @@ class Scraper
     doc = Nokogiri::HTML(html)
     places = doc.css('.vip')
 
-    places.each do |place|
-    place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(', ')
-    address = place.css('div.title-meta').text.split(',')
-    desc = place.css('div.description p').text.split(', ')
+     places.each do |place|
+     place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(',')
+     address = place.css('div.title-meta').text.split(',')
+     desc = place.css('div.description p').text.split(',')
 
     output = {
       :place_name => place_name,
@@ -42,6 +42,6 @@ class Scraper
          csv << [result[:place_name], result[:address]]
        end
      end
-     results
+    results
   end
 end

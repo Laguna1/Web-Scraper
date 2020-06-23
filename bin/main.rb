@@ -39,7 +39,7 @@ class Start < Scraper
           puts
           puts '**************************************"Good luck!"**********************************************'
     end
-  end
+end
 
 scraper = Start.new
 scraper.welcome
