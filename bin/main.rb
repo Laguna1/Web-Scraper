@@ -1,4 +1,4 @@
-# rubocop: disable Lint/InconsistentIndentation
+# 'Inconsistent indentation detected.'.freeze
 require_relative '../lib/scraper5'
 
 class Start < Scraper
