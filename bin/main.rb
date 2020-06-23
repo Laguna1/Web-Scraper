@@ -25,7 +25,6 @@ class Start < Scraper
           puts '                                         "Let\'s start!"                                        '
           puts '************************************************************************************************'
           puts
-          puts
           sleep 0.5
           break
         elsif answer == 'n'
@@ -38,12 +37,12 @@ class Start < Scraper
           puts
           puts
           puts
-          puts '*************************        '     "Good luck!"     '    ************************************'
+          puts '**************************************"Good luck!"**********************************************'
     end
   end
- 
-  scraper = Start.new
-  scraper.welcome
-  scraper.user_answer
-  scraper.scrape_showplaces
-  scraper.export_to_csv
+
+scraper = Start.new
+scraper.welcome
+scraper.user_answer
+scraper.scrape_showplaces
+scraper.export_to_csv
