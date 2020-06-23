@@ -32,7 +32,7 @@ class Scraper
          :desc => desc
        }
          results << output.each_value { |value| result = "#{value}" }
-    end
+     end
     sleep 0.1
     export_to_csv(results)
   end
