@@ -1,6 +1,18 @@
 # Web Scraper in Ruby
+I created this project as a requirement to complete the Ruby section in the main Microverse technical program.
+To check the scraper, web site Mykharkov.info was used to collect data on the sights of the city, for each 
+scraped the name, address, short description.
 
-
+## In this project
+The following gems were used: Nokogiri, Open-Uri
+The Pry debugger was used to check the values ​​of scraped-off data from the page.
+Scraper results saved in a csv format file
+Set up the code linter in the repository
+Github flow used
+Used RSpec to create test cases for methods of class public
+Implemented the basic principles of OOP
+Had an organized project structure
+Common Ruby Patterns Used
 
 ![screen](png)
 
@@ -9,36 +21,31 @@
 - Ruby 
 - Rubygems 
 - Nokogiri 
-- Byebug 
+- Pry
 - Rspec 
 - VSCode 
 
-Using bundler 1.17.2
-Using byebug 11.1.3
-Using diff-lcs 1.3
-Using unf_ext 0.0.7.7 (x64-mingw32)
-Using unf 0.1.4
-Using domain_name 0.5.20190701
-Using ffi 1.13.1 (x64-mingw32)
-Using http-accept 1.7.0
-Using http-cookie 1.0.3
-Using mime-types-data 3.2020.0425
-Using mime-types 3.3.1
-Using multi_xml 0.6.0
-Using httparty 0.18.1
-Using mini_portile2 2.4.0
-Using netrc 0.11.0
-Using nokogiri 1.10.9 (x64-mingw32)
-Using paint 2.2.0
-Using rest-client 2.1.0 (x64-mingw32)
-Using rspec-support 3.9.3
-Using rspec-core 3.9.2
-Using rspec-expectations 3.9.2
-Using rspec-mocks 3.9.1
-Using rspec 3.9.0
+
+## Prerequisites
+Clone this repository.
+In the terminal of your OS, find the storage address and run the batch installation
+It  necessary to install the gems to run the program:
+- nokogiri
+- pry
+- csv
+- RSpec
+
+## 💻 Use
+To run the program, run ruby bin/​​main.rb.
+Follow the instructions.
+
+## 📝 Run tests
+Used RSpec as a testing tool.
 
 
-##  Author
+In the root folder, run the 'rspec' or 'rspec --format documentation' to run the tests.
+
+
 
 👤 **Oksana Petrova**
 
