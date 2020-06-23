@@ -14,7 +14,8 @@ scraped the name, address, short description.
 - [ ] Had an organized project structure
 - [ ] Common Ruby Patterns Used
 
-![CSV.file](./result_csv.png)
+![CSV.file](./code_example.png)
+
 
 ##  Built With
 
@@ -38,6 +39,10 @@ It  necessary to install the gems to run the program:
 ## 💻 Use
 To run the program, run 'ruby bin/​​main.rb'.
 Follow the instructions.
+
+
+![CSV.file](./result_csv.png)
+
 
 ## 📝 Run tests
 Used RSpec as a testing tool.
