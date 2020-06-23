@@ -23,40 +23,38 @@ class Scraper
       place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(', ')
       address = place.css('div.title-meta').text.split(', ')
       desc = place.css("div.description p").text.split(', ')
-      
+     
 
       output = {
         :place_name => place_name,
         :address => address,
         :desc => desc
       }
-      results << output.values
-      binding.pry
-      sleep 0.5
-      export_to_csv(results)
+
+      #results << output.values
+
+      results << output.each_value { |value| result = "#{value}" }
+        
+        
+      
+      
+      
       #create_output
       
     end
-    results
- end
+   # binding.pry
+    sleep 0.5
+    export_to_csv(results)
+    binding.pry
+  end
 
-#   def create_output
-#     File.open("output.txt","w") do |results|
-#         puts results
-#     end
-#     results
-#   end
-
-
-   def export_to_csv(results)
+  def export_to_csv(results)
      CSV.open('results.csv', 'w') do |csv|
        csv << %w[PLACE ADDRESS] #SHORT_DESCRIPTION]
        results.each do |result|
          csv << [result[:place_name], result[:address]]# result[:desc]]
        end
-    end
-   end
-
-
-
+     end
+     results
+  end
 end

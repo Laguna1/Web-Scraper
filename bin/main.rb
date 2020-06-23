@@ -1,6 +1,6 @@
 #require_relative '../lib/scraper3'
 require 'paint'
-require_relative '../lib/scraper4'
+require_relative '../lib/scraper5'
 class Start < Scraper
 
     def initialize
@@ -45,6 +45,6 @@ end
  scraper.welcome
  scraper.user_answer
  scraper.scrape_showplaces
- #scraper.export_to_csv
+ scraper.export_to_csv
 
 
