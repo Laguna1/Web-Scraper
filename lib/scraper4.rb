@@ -31,22 +31,14 @@ class Scraper
         :desc => desc
       }
       results << output.values
-      binding.pry
+    #  binding.pry
       sleep 0.5
-      export_to_csv(results)
+    #  export_to_csv(results)
       #create_output
       
     end
     results
  end
-
-#   def create_output
-#     File.open("output.txt","w") do |results|
-#         puts results
-#     end
-#     results
-#   end
-
 
    def export_to_csv(results)
      CSV.open('results.csv', 'w') do |csv|
@@ -55,6 +47,7 @@ class Scraper
          csv << [result[:place_name], result[:address]]# result[:desc]]
        end
     end
+    results
    end
 
 

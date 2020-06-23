@@ -23,7 +23,7 @@ class Scraper
       place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(', ')
       address = place.css('div.title-meta').text.split(', ')
       desc = place.css("div.description p").text.split(', ')
-     
+     binding.pry
 
       output = {
         :place_name => place_name,
@@ -45,7 +45,7 @@ class Scraper
    # binding.pry
     sleep 0.5
     export_to_csv(results)
-    binding.pry
+#    binding.pry
   end
 
   def export_to_csv(results)

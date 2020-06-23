@@ -1,13 +1,10 @@
-require_relative '../lib/scraper4'
+require_relative '../lib/scraper5'
 
-describe Scraper do
-    subject(:scraper) { Scraper.new }
-    let(:search_url) {'https://mykharkov.info/catalog/dostoprimechatelnosti'}
-  
-    describe '#scrape_showplaces' do
-      it 'returns link with the information scraped' do
-        expect.(place.attribute('href').value).to eql('"https://mykharkov.info/catalog/sharovskij-zamok.html"')
-      end
+RSpec.describe Scraper do
+  describe 'export_to_csv(results)' do
+    it 'returns the scraped results to the csv format file' do
+      expect(File.exist?('results.csv')).to eql(true)
     end
+  end
 end
 
