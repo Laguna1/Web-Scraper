@@ -1,6 +1,5 @@
-#require_relative '../lib/scraper3'
-require 'paint'
 require_relative '../lib/scraper5'
+
 class Start < Scraper
 
     def initialize
@@ -11,10 +10,11 @@ class Start < Scraper
        puts
        puts
        puts
-       puts '***********************************************'"Hello!"'***************************************************'
-       puts '***                  '"Here you can find out about the main attractions and monuments"'                  ***'
-       puts '***                          '"of the beautiful Ukrainian city Kharkiv."'                                ***'
-       puts '***                                      '"Please choose y/n"'                                           ***'
+       puts '***********************************************************************************************************'
+       puts '***                                             "Hello!"                                                ***'
+       puts '***                   "Here you can find out about the main attractions and monuments"                  ***'
+       puts '***                           "of the beautiful Ukrainian city Kharkiv."                                ***'
+       puts '***                                       "Please choose y/n"                                           ***'
        puts '***********************************************************************************************************'
     end
 
@@ -23,7 +23,7 @@ class Start < Scraper
           answer = gets.chomp.downcase
           if answer == 'y'
               puts '*********************************************************************************************************'
-              puts "Let\'s start!"
+              puts '                                         "Let\'s start!"                                                 '
               puts '*********************************************************************************************************'
               puts
               puts
@@ -35,16 +35,13 @@ class Start < Scraper
               puts 'It seems you work too hard, take care of yourself'
           end
         end
-        sleep 1
+        
         pp scrape_showplaces
         puts
         puts
         puts
         puts '**********************************************        '     "Good luck!"     '    **********************************************'
-    
     end
-
- 
 end
 
  scraper = Start.new
@@ -52,5 +49,3 @@ end
  scraper.user_answer
  scraper.scrape_showplaces
  scraper.export_to_csv
-
-
