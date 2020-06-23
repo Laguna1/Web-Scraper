@@ -14,7 +14,7 @@ scraped the name, address, short description.
 - [ ] Had an organized project structure
 - [ ] Common Ruby Patterns Used
 
-![screen](png)
+![CSV.file](./result_csv.png)
 
 ##  Built With
 
