@@ -20,7 +20,7 @@ class Start < Scraper
 
   def user_answer
     loop do
-       answer = gets.chomp.downcase
+      answer = gets.chomp.downcase
         if answer == 'y'
           puts '************************************************************************************************'
           puts '                                         "Let\'s start!"                                        '
@@ -48,4 +48,3 @@ scraper.user_answer
 scraper.scrape_showplaces
 scraper.export_to_csv
 
-# rubocop: enable Lint/InconsistentIndentation
