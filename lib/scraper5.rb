@@ -22,7 +22,7 @@ class Scraper
     places = doc.css('.vip')
 
      places.each do |place|
-       place_name = place.css('div.title-wrapper a').text.gsub(/\t/, ' ').split(',')
+       place_name = place.css('div.title-wrapper a').text.gsub(/\t/,' ').split(',')
        address = place.css('div.title-meta').text.split(',')
        desc = place.css('div.description p').text.split(',')
 
