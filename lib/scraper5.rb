@@ -1,3 +1,5 @@
+# rubocop: disable Metrics/MethodLength
+# rubocop: disable Lint/UselessAssignment
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
@@ -35,6 +37,8 @@ class Scraper
     export_to_csv(results)
   end
 
+  # rubocop: enable Lint/UselessAssignment
+
   def export_to_csv(results)
     CSV.open('results.csv', 'w') do |csv|
        csv << %w[PLACE ADDRESS]
@@ -45,3 +49,5 @@ class Scraper
     results
   end
 end
+
+# rubocop: enable Metrics/MethodLength
