@@ -1,9 +1,9 @@
+  
 AllCops:
   Exclude:
     - "README.md"
     - "Guardfile"
     - "Rakefile"
-    - "spec/spec_helper.rb"
 
   DisplayCopNames: true
 
@@ -18,7 +18,6 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
-
 
 Style/Documentation:
   Enabled: false

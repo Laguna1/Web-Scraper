@@ -20,11 +20,11 @@ class Scraper
     places = doc.css('.vip')        
   
     places.each do |place|
-      place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(', ')
-      address = place.css('div.title-meta').text.split(', ')
-      desc = place.css("div.description p").text.split(', ')
+    place_name = place.css('div.title-wrapper a').text.gsub(/\t/,'').split(', ')
+    address = place.css('div.title-meta').text.split(', ')
+    desc = place.css("div.description p").text.split(', ')
      
-      output = {
+    output = {
         :place_name => place_name,
         :address => address,
         :desc => desc
@@ -33,7 +33,7 @@ class Scraper
    end
       sleep 0.1
       export_to_csv(results)
- end
+  end
 
   def export_to_csv(results)
      CSV.open('results.csv', 'w') do |csv|
