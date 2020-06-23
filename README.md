@@ -4,15 +4,15 @@ To check the scraper, web site [Mykharkov.info](https://mykharkov.info/catalog/d
 scraped the name, address, short description.
 
 ## In this project
-[ ] The following gems were used: Nokogiri, Open-Uri
-[ ] The Pry debugger was used to check the values ​​of scraped-off data from the page.
-[ ] Scraper results saved in a csv format file
-[ ] Set up the code linter in the repository
-[ ] Github flow used
-[ ] Used RSpec to create test cases for methods of class public
-[ ] Implemented the basic principles of OOP
-[ ] Had an organized project structure
-[ ] Common Ruby Patterns Used
+- [ ] The following gems were used: Nokogiri, Open-Uri
+- [ ] The Pry debugger was used to check the values ​​of scraped-off data from the page.
+- [ ] Scraper results saved in a csv format file
+- [ ] Set up the code linter in the repository
+- [ ] Github flow used
+- [ ] Used RSpec to create test cases for methods of class public
+- [ ] Implemented the basic principles of OOP
+- [ ] Had an organized project structure
+- [ ] Common Ruby Patterns Used
 
 ![screen](png)
 
