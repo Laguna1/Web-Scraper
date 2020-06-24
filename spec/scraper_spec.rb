@@ -25,7 +25,6 @@ RSpec.describe Scraper do
   #   it 'wait call results' do
   #     it { should be_a_kind_of(String) }
   #   end
-  # end 
+  # end
 
 end
- 
