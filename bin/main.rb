@@ -20,7 +20,7 @@ class Start < Scraper
 
   def user_answer
     loop do
-      answer = gets.chomp.downcase
+      answer = gets.strip.downcase
       if answer == 'y'
         puts '************************************************************************************************'
         puts '                                         "Let\'s start!"                                        '
@@ -46,4 +46,3 @@ scraper = Start.new
 scraper.welcome
 scraper.user_answer
 scraper.scrape_showplaces
-scraper.export_to_csv

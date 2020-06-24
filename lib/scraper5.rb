@@ -6,7 +6,7 @@ require 'open-uri'
 require 'csv'
 
 class Scraper
-  attr_reader :place_name, :address, :desc, :output
+  attr_reader :place_name, :address, :desc, :output, :result 
 
   def initialize
     @place_name = place_name
@@ -20,7 +20,7 @@ class Scraper
     html = URI.open(search_url)
     doc = Nokogiri::HTML(html)
     places = doc.css('.vip')
-
+#binding.pry
     places.each do |place|
       place_name = place.css('div.title-wrapper a').text.gsub(/\t/, ' ').split(',')
       address = place.css('div.title-meta').text.split(',')
