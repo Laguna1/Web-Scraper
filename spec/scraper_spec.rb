@@ -4,7 +4,7 @@ RSpec.describe Scraper do
 
   describe '#scrape_showplaces' do
     it 'scrapes data from the site and returns results' do
-      expect(!output.nil).to be(true)
+      expect(output != nil).to be(true)
     end
   end
 
@@ -26,5 +26,4 @@ RSpec.describe Scraper do
   #     it { should be_a_kind_of(String) }
   #   end
   # end
-
 end
