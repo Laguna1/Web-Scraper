@@ -17,7 +17,7 @@ class Scraper
   def scrape_showplaces
     results = []
     search_url = 'https://mykharkov.info/catalog/dostoprimechatelnosti'
-    html = open(search_url)
+    html = URI.open(search_url)
     doc = Nokogiri::HTML(html)
     places = doc.css('.vip')
 
