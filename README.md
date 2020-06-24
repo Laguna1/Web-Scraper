@@ -4,7 +4,7 @@ To check the scraper, web site [Mykharkov.info](https://mykharkov.info/catalog/d
 scraped the name, address, short description.
 
 ## In this project
-- [ ] The following gems were used: Nokogiri, Open-Uri
+- [ ] The following gems were used: Noko
 - [ ] The Pry debugger was used to check the values ​​of scraped-off data from the page.
 - [ ] Scraper results saved in a csv format file
 - [ ] Set up the code linter in the repository
@@ -21,7 +21,8 @@ scraped the name, address, short description.
 
 - Ruby 
 - Rubygems 
-- Nokogiri 
+- Nokogiri
+- Open-Uri 
 - Pry
 - Rspec 
 - VSCode 
@@ -50,7 +51,7 @@ Used RSpec as a testing tool.
 
 In the root folder, run the 'rspec' or 'rspec --format documentation' to run the tests.
 
-
+![Tests](./testscreen.png)
 
 👤 **Oksana Petrova**
 
