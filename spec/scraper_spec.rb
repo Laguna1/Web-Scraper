@@ -4,7 +4,7 @@ RSpec.describe Scraper do
 
   describe '#scrape_showplaces' do
     it 'scrapes data from the site and returns results' do
-      expect(output != nil).to be(true)
+      expect(!output.nil).to be(true)
     end
   end
 
@@ -18,11 +18,8 @@ RSpec.describe Scraper do
   # #  let(:address) { address }
   #   let(:place_name) { @place_name }
   #   let(:address) { @address }
-  #   let(:desc) { @desc }                                                                   be_instance_of       be_kind_of   respond_to
+  #   let(:desc) { @desc }     be_instance_of       be_kind_of   respond_to
   #  let(:results) {@results}
-              
-  
-
   # let(:scraper) { Scraper.new }
   # describe '#scrape_showplaces' do
   #   it 'wait call results' do
