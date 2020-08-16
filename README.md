@@ -1,4 +1,5 @@
 # Web Scraper in Ruby
+## Web Scraper (Ruby Capstone Project)
 I created this project as a requirement to complete the Ruby section in the main Microverse technical program.
 To check the scraper, web site [Mykharkov.info](https://mykharkov.info/catalog/dostoprimechatelnosti)  was used to collect data on the sights of the city, for each 
 scraped the name, address, short description.
