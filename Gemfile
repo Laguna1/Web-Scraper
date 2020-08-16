@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-
-gem 'byebug'
+git_source(:github) { |repo| "https://github.com/#{repo}.git"}
 gem 'nokogiri'
 gem 'paint'
 gem 'rest-client'
 gem 'httparty'
 gem 'rspec'
+gem 'pry'
